@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Feathercoin is Great</title>
-</head>
-<body>
+<!DOCTYPE html >
+<html lang="{{ site.lang }}">
 
-<header>
-	<h1>Feathercoin is Great</h1>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/news.html">News</a></li>
-		</ul>
-	</nav>
-</header>
+  {% include head.html %}
 
-{{content}}
+  <body>
 
-</body>
+    <!-- Page Loader -->
+    <div id="page-loader" class="page-loader"><span class="load-icon"></span></div>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+
 </html>
