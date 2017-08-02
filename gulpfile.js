@@ -3,8 +3,9 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-var messages = {
+var ghPages     = require('gulp-gh-pages');
+var jekyll      = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+var messages    = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
@@ -67,3 +68,9 @@ gulp.task('watch', function () {
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
+
+/** Deploy to github pages**/
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
