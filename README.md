@@ -14,7 +14,7 @@ To get started with local development you will need to follow the steps found he
 
 ## A Few "Gotchyas"
 
-1. If a page errors out in Jekyll nothing will be displayed.  Common problems are using returns when defining a variable instead of using <br>.
+1. If a page errors out in Jekyll nothing will be displayed.  Common problems are using returns when defining a variable instead of using < br >.
 
 2. If you use a colon in your text it will error out.  Instead, either use a different character or use &#58; to display a colon.
 
