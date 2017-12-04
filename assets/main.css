@@ -1,7 +1,7 @@
 /* ---------- General Styling ----------- */ 
 
 .container-bg {
-	background-image:url('../assets/img/wallet.jpg');
+	background-image:url('../assets/img/walletopti.jpg');
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position:center;
@@ -10,7 +10,7 @@
 
 .container-bg2 {
     height: 500px;
-    background-image: url("../assets/img/main.jpg");
+    background-image: url("../assets/img/mainopti.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 0%;
