@@ -1,0 +1,75 @@
+{% include header.html %}
+{% include navbar.html %}
+
+<div class="container-bg2">
+    <div class="carousel-caption">
+      <h1>{{ page.headcaption }} </h1><br><h2>{{ page.subcaption }}</h2>
+    </div>
+  </div>
+    <div class="container">
+      <div class="row ">
+        <div class="text-center">
+          <h1>{{ page.welcome }}</h1><br>
+        <p>{{page.welcomemessage }}</p>
+      </div>
+      </div>
+    </div>
+    <div class=" bg-dust">
+      <div class="container">
+        <div class="row text-center rowpad">
+          <div class="col3 col-md-4">
+             <h3>{{page.col1header}}</h3>
+             <p>{{page.col1message}}</p>
+
+          </div>
+          <div class="col3 col-md-4">
+             <h3>{{page.col2header}}</h3>
+             <p>{{page.col2message}}</p>
+          </div>
+          <div class="col3 col-md-4">
+             <h3>{{page.col3header}}</h3>
+             <p>{{page.col3message}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid container-bg no-padding" id="wallets">
+      <div class="row">
+        <div class="col-md-4 offset-md-8 col-xs-6">
+          <button type="button" class="btn btn-outline-secondary btnstart mobile-button" onclick="location.href='https://github.com/FeatherCoin/Feathercoin/releases/download/v0.9.6.2-prod/feathercoin-0.9.6.2-win32-setup.exe'">Windows 32 bit</button>
+          <br>
+          <button type="button" class="btn btn-outline-secondary mobile-button" onclick="location.href='https://github.com/FeatherCoin/Feathercoin/releases/download/v0.9.6.2-prod/feathercoin-0.9.6.2-win64-setup.exe'">Windows 64 bit</button>
+          <br>
+          <button type="button" class="btn btn-outline-secondary mobile-button" onclick="location.href='https://github.com/FeatherCoin/Feathercoin/releases/download/v0.9.6.2-prod/Feathercoin-Qt-0.9.6.2.dmg">Mac</button>
+          <br>
+          <button type="button" class="btn btn-outline-secondary mobile-button" onclick="location.href='https://software.opensuse.org/package/feathercoin'">Linux</button>
+          <br>
+          <button type="button" class="btn btn-outline-secondary mobile-button" onclick="location.href='https://play.google.com/store/apps/details?id=com.feathercoin.wallet'">Android</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <h3>{{ page.row1col1header }}</h3>
+           <p>{{ page.row1col1message }}</p>
+        </div>
+        <div class="col-md-6">
+           <h3>{{ page.row1col2header }}</h3>
+           <p>{{ page.row1col2message }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+           <h3>{{ page.row2col1header }}</h3>
+           <p>{{ page.row2col1message }}</p>
+        </div>
+        <div class="col-md-6">
+           <h3>{{ page.row2col2header }}</h3>
+           <p>{{ page.row2col2message }}</p>
+        </div>
+      </div>
+    </div>
+   
+{% include techstats.html %}
+{% include footer.html %}
